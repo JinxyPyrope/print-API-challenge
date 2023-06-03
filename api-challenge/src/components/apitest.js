@@ -1,9 +1,11 @@
 import React, { useState } from "react"
+import axios from "axios"
 
-function apiTest() {
+function ApiTest() {
+  const [weatherData, setWeatherData] = useState([])
   const axios = require("axios")
 
-  return <div>apitest</div>
+  return <div>Apitest</div>
 }
 
-export default apiTest
+export default ApiTest
