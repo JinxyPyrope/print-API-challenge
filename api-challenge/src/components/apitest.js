@@ -3,9 +3,11 @@ import axios from "axios"
 
 function ApiTest() {
   const [weatherData, setWeatherData] = useState([])
-  const axios = require("axios")
 
-  axios.get('')
+  axios.get("https://random-data-api.com/api/users/random_user?size=10").then(function (res) {
+    setWeatherData(res)
+    console.log(weatherData)
+  })
 
   return <div>Apitest</div>
 }
