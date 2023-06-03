@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 
-function apitest() {
+function apiTest() {
+  const axios = require("axios")
+
   return <div>apitest</div>
 }
 
-export default apitest
+export default apiTest
